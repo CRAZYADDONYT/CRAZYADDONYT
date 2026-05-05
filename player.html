@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>XXG's Player</title><link rel="stylesheet" href="styles.css" /></head>
+  <body>
+    <header class="navbar"><a href="/" class="brand">XXG's</a></header>
+    <main class="player-layout">
+      <section>
+        <video id="player" controls></video>
+        <h1 id="videoTitle"></h1>
+        <p id="videoMeta" class="muted"></p>
+        <div class="actions-row"><button id="likeBtn">👍 Like</button><button id="subBtn">🔔 Subscribe</button></div>
+        <p id="videoDesc" class="muted"></p>
+      </section>
+      <aside class="comments-card">
+        <h3>Comments</h3>
+        <form id="commentForm"><textarea id="commentText" rows="3" placeholder="Add a comment" required></textarea><button type="submit">Post</button></form>
+        <div id="commentsList"></div>
+      </aside>
+    </main>
+    <script src="player.js"></script>
+  </body>
+</html>
