@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon-card {
+  @apply flex flex-col items-center gap-2 text-center;
+}
+
+.label-neon {
+  @apply text-3xl font-black uppercase tracking-wide text-transparent;
+  background: linear-gradient(180deg, #59d6ff 0%, #ec7dff 56%, #6be8ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
